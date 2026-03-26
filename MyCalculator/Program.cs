@@ -71,7 +71,7 @@
         {
             Console.Write(msg);
 
-            string line = Console.ReadLine() ?? "";
+            string line = Console.ReadLine() ?? string.Empty;
             if (line == QuitSymbol)
             {
                 return (0.0, true);
@@ -92,10 +92,10 @@
         {
             Console.Write(msg);
 
-            string line = Console.ReadLine() ?? "";
+            string line = Console.ReadLine() ?? string.Empty;
             if (line == QuitSymbol)
             {
-                return ("", true);
+                return (string.Empty, true);
             }
 
             if (line.Length == 1 && Operations.Contains(line))
